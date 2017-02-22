@@ -11,9 +11,10 @@ package ejerciciopoo;
  */
 public class Main {
     public static void main(String[] args) {
-       Rectangulo rectangulo=new Rectangulo(80,50);
-       Triangulo triangulo =new Triangulo (50);
-       Casa casa=new Casa(triangulo, rectangulo);
+       Rectangulo rectangulo=new Rectangulo(180,130);
+       Triangulo triangulo =new Triangulo (104);
+       Poligono poligono=new Poligono(4,40);
+       Casa casa=new Casa(triangulo, rectangulo , poligono);
     casa.dibujar();
     
     }
