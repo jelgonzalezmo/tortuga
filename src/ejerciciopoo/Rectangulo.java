@@ -22,18 +22,26 @@ public class Rectangulo {
     }
 
    public void dibujar(Turtle turtle){
-   turtle.setPos(-100,150);
-   turtle.forward(this.alto);
-   turtle.right(90);
-   turtle.forward(this.ancho);
-   turtle.right(90);
-   turtle.forward(this.alto);
-   turtle.right(90);
-   turtle.forward(this.ancho);
-   turtle.right(90);
+   turtle.setPos(-80,-50);
+    turtle.left(90);
+   turtle.back(this.alto);
+   turtle.left(90);
+   turtle.back(this.ancho);
+   turtle.left(90);
+   turtle.back(this.alto);
+   turtle.left(90);
+   turtle.back(this.ancho);
+   turtle.left(90);
    turtle.setColor(Color.blue);
-   
-   
+   turtle.setPos(-35,-120);
+   turtle.back(60);
+   turtle.left(90);
+   turtle.back(30);
+   turtle.left(90);
+   turtle.back(60);
+   turtle.left(90);
+   turtle.back(30);
+   turtle.left(90);
    }
 
    

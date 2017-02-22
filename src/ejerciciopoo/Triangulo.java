@@ -19,7 +19,13 @@ public class Triangulo {
     }
 
    public void dibujar(Turtle turtle){
-     
+     turtle.setPos(-80,-50);
+     turtle.right(60);
+     turtle.forward(this.lado);
+     turtle.right(60);
+     turtle.forward(this.lado);
+     turtle.left(30);
+     turtle.back(180);
       
        
    }

@@ -14,17 +14,21 @@ import ch.aplu.turtle.Turtle;
 public class Casa {
     private Triangulo techo;
     private Rectangulo estructura;
+    private Poligono ventana;
     private Turtle tortuga;
 
-    public Casa(Triangulo techo, Rectangulo estructura) {
+    public Casa(Triangulo techo, Rectangulo estructura, Poligono ventana) {
         this.techo = techo;
         this.estructura = estructura;
-        this.tortuga = new Turtle();
+        this.ventana = ventana;
+       this.tortuga = new Turtle();
     }
-    
+
+        
     public void dibujar(){
     this.techo.dibujar(tortuga);
     this.estructura.dibujar(tortuga);
+    this.ventana.dibujar(tortuga);
     }
     
     
